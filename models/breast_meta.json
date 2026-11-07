@@ -1,0 +1,219 @@
+{
+  "features": [
+    {
+      "name": "radius_mean",
+      "type": "numeric",
+      "min": -3.4648091473983578,
+      "max": 3.760155248575284,
+      "median": 0.01446952589339915
+    },
+    {
+      "name": "texture_mean",
+      "type": "numeric",
+      "min": -7.436473274682949,
+      "max": 6.006848107856137,
+      "median": -0.4846826300533962
+    },
+    {
+      "name": "perimeter_mean",
+      "type": "numeric",
+      "min": -10.236226383962354,
+      "max": 6.054869665553565,
+      "median": -0.5750128833461717
+    },
+    {
+      "name": "area_mean",
+      "type": "numeric",
+      "min": -6.633334300836054,
+      "max": 6.955624629168592,
+      "median": -1.0347615642635268
+    },
+    {
+      "name": "smoothness_mean",
+      "type": "numeric",
+      "min": -16.00672943064184,
+      "max": 12.959662119115835,
+      "median": -1.7749267024787445
+    },
+    {
+      "name": "compactness_mean",
+      "type": "numeric",
+      "min": -14.309879627455288,
+      "max": 15.157339606132856,
+      "median": -0.9962321740806619
+    },
+    {
+      "name": "concavity_mean",
+      "type": "numeric",
+      "min": -3.1531113346441937,
+      "max": 3.7661800763391753,
+      "median": 0.004159664409346651
+    },
+    {
+      "name": "concave_points_mean",
+      "type": "numeric",
+      "min": -3.940008377962068,
+      "max": 3.712795345114864,
+      "median": -0.02372200441897175
+    },
+    {
+      "name": "symmetry_mean",
+      "type": "numeric",
+      "min": -7.92875774600764,
+      "max": 9.16889162471929,
+      "median": -0.5421748594439995
+    },
+    {
+      "name": "fractal_dimension_mean",
+      "type": "numeric",
+      "min": -6.613661684458126,
+      "max": 9.499182974135197,
+      "median": -0.16118288739267955
+    },
+    {
+      "name": "radius_se",
+      "type": "numeric",
+      "min": -3.817043386176732,
+      "max": 3.2844108479713445,
+      "median": 0.018476643569807202
+    },
+    {
+      "name": "texture_se",
+      "type": "numeric",
+      "min": -3.705150007941516,
+      "max": 3.5486823975964072,
+      "median": -0.01148259956278995
+    },
+    {
+      "name": "perimeter_se",
+      "type": "numeric",
+      "min": -6.564497854082535,
+      "max": 7.614864359661736,
+      "median": 0.6929386591696719
+    },
+    {
+      "name": "area_se",
+      "type": "numeric",
+      "min": -8.631508685085613,
+      "max": 8.754473607920804,
+      "median": 0.005165563721652101
+    },
+    {
+      "name": "smoothness_se",
+      "type": "numeric",
+      "min": -6.3104440409498,
+      "max": 8.026653890771543,
+      "median": 1.012501665195775
+    },
+    {
+      "name": "compactness_se",
+      "type": "numeric",
+      "min": -3.9993322490280514,
+      "max": 3.60559068366378,
+      "median": 0.0169894086192662
+    },
+    {
+      "name": "concavity_se",
+      "type": "numeric",
+      "min": -3.782615510175323,
+      "max": 2.929016168139281,
+      "median": -0.01025136388147225
+    },
+    {
+      "name": "concave_points_se",
+      "type": "numeric",
+      "min": -3.4335761389755493,
+      "max": 4.202025899765999,
+      "median": 0.034205613275265
+    },
+    {
+      "name": "symmetry_se",
+      "type": "numeric",
+      "min": -6.51884207749406,
+      "max": 8.383562460791328,
+      "median": -0.1522657614253466
+    },
+    {
+      "name": "fractal_dimension_se",
+      "type": "numeric",
+      "min": -3.1245866028577547,
+      "max": 3.829782171340856,
+      "median": 0.006334325658873799
+    },
+    {
+      "name": "radius_worst",
+      "type": "numeric",
+      "min": -3.265188678649785,
+      "max": 3.495113213548938,
+      "median": -0.0049088215276524
+    },
+    {
+      "name": "texture_worst",
+      "type": "numeric",
+      "min": -3.398328530975373,
+      "max": 3.766233603022172,
+      "median": 0.0009517532234110499
+    },
+    {
+      "name": "perimeter_worst",
+      "type": "numeric",
+      "min": -4.462968527080103,
+      "max": 3.4462126889539886,
+      "median": 0.0086793511985392
+    },
+    {
+      "name": "area_worst",
+      "type": "numeric",
+      "min": -4.157733877399132,
+      "max": 3.228376827254856,
+      "median": 0.005319057302583
+    },
+    {
+      "name": "smoothness_worst",
+      "type": "numeric",
+      "min": -18.13664590565849,
+      "max": 22.703336692008985,
+      "median": -0.42420133893162637
+    },
+    {
+      "name": "compactness_worst",
+      "type": "numeric",
+      "min": -12.322504204493878,
+      "max": 13.225677500375864,
+      "median": -0.7761975126248613
+    },
+    {
+      "name": "concavity_worst",
+      "type": "numeric",
+      "min": -19.09712952986899,
+      "max": 15.14974692701922,
+      "median": -1.0104486687096905
+    },
+    {
+      "name": "concave_points_worst",
+      "type": "numeric",
+      "min": -7.628713962152398,
+      "max": 7.711389793636522,
+      "median": 1.1025813575418373
+    },
+    {
+      "name": "symmetry_worst",
+      "type": "numeric",
+      "min": -3.688023788423211,
+      "max": 3.471549476805477,
+      "median": -0.014337843543192251
+    },
+    {
+      "name": "fractal_dimension_worst",
+      "type": "numeric",
+      "min": -3.189729816032424,
+      "max": 3.112841170502817,
+      "median": 3.2266161986999747e-06
+    }
+  ],
+  "models": [
+    "ann",
+    "svm",
+    "random_forest"
+  ]
+}

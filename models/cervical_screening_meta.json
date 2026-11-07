@@ -1,0 +1,205 @@
+{
+  "features": [
+    {
+      "name": "Age",
+      "type": "numeric",
+      "min": 13.0,
+      "max": 84.0,
+      "median": 26.0
+    },
+    {
+      "name": "Number_of_sexual_partners",
+      "type": "numeric",
+      "min": 1.0,
+      "max": 28.0,
+      "median": 2.0
+    },
+    {
+      "name": "First_sexual_intercourse",
+      "type": "numeric",
+      "min": 10.0,
+      "max": 32.0,
+      "median": 17.0
+    },
+    {
+      "name": "Num_of_pregnancies",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 11.0,
+      "median": 2.0
+    },
+    {
+      "name": "Smokes",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "Smokes_(years)",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 37.0,
+      "median": 0.0
+    },
+    {
+      "name": "Smokes_(packs/year)",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 37.0,
+      "median": 0.0
+    },
+    {
+      "name": "Hormonal_Contraceptives",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "Hormonal_Contraceptives_(years)",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 30.0,
+      "median": 0.5
+    },
+    {
+      "name": "IUD",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "IUD_(years)",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 19.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs_(number)",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 4.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:condylomatosis",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:vaginal_condylomatosis",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:vulvo-perineal_condylomatosis",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:syphilis",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:pelvic_inflammatory_disease",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:genital_herpes",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:molluscum_contagiosum",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:HIV",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:Hepatitis_B",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:HPV",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs:_Number_of_diagnosis",
+      "type": "numeric",
+      "min": 0.0,
+      "max": 3.0,
+      "median": 0.0
+    },
+    {
+      "name": "STDs_not_answered",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "Hinselmann",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "Schiller",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "Citology",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    }
+  ],
+  "models": [
+    "ann",
+    "svm",
+    "random_forest"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "features": [
+    {
+      "name": "GENDER",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "AGE",
+      "type": "numeric",
+      "min": 38.0,
+      "max": 87.0,
+      "median": 63.0
+    },
+    {
+      "name": "SMOKING",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "YELLOW_FINGERS",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "ANXIETY",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "PEER_PRESSURE",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "CHRONIC_DISEASE",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "FATIGUE",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "ALLERGY",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "WHEEZING",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "ALCOHOL_CONSUMING",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "COUGHING",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "SHORTNESS_OF_BREATH",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    },
+    {
+      "name": "SWALLOWING_DIFFICULTY",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0
+    },
+    {
+      "name": "CHEST_PAIN",
+      "type": "binary",
+      "min": 0.0,
+      "max": 1.0,
+      "median": 1.0
+    }
+  ],
+  "models": [
+    "ann",
+    "svm",
+    "random_forest"
+  ]
+}
