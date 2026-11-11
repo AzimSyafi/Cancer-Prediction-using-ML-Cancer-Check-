@@ -267,16 +267,41 @@ def model_scores(cancer):
     return test_df[test_df.Cancer == cancer], cv_df[cv_df.Cancer == cancer]
 
 
+@st.cache_data
+def load_nested():
+    """Nested CV summary from 05_extended_eval.py, or None if it has not been run."""
+    path = os.path.join(RESULTS_DIR, "extended", "nested_cv_summary.csv")
+    return pd.read_csv(path) if os.path.exists(path) else None
+
+
 def reliability(cancer):
+    """Badge from the best nested-CV MCC of the three app models.
+
+    MCC is used instead of F1 because F1 ignores correct "no cancer" answers:
+    on lung, a model that always says "cancer" already scores F1 0.93.
+    Falls back to CV F1 if the extended results are missing.
+    """
+    nested = load_nested()
+    if nested is not None:
+        rows = nested[(nested.Dataset == cancer) & nested.Model.isin(["ANN", "SVM", "Random Forest"])]
+        if len(rows):
+            best = float(rows["MCC mean"].max())
+            if best >= 0.85:
+                return "green", f"Very reliable · MCC {best:.2f}", best
+            if best >= 0.6:
+                return "green", f"Reliable · MCC {best:.2f}", best
+            if best >= 0.3:
+                return "blue", f"Moderate · MCC {best:.2f}", best
+            return "amber", f"Experimental · MCC {best:.2f}", best
     _, cvc = model_scores(cancer)
     best = cvc["f1_mean"].max() if len(cvc) else 0
     if best >= 0.95:
-        return "green", f"Very reliable · score {best:.2f}", best
+        return "green", f"Very reliable · F1 {best:.2f}", best
     if best >= 0.85:
-        return "green", f"Reliable · score {best:.2f}", best
+        return "green", f"Reliable · F1 {best:.2f}", best
     if best >= 0.6:
-        return "blue", f"Moderate · score {best:.2f}", best
-    return "amber", f"Experimental · score {best:.2f}", best
+        return "blue", f"Moderate · F1 {best:.2f}", best
+    return "amber", f"Experimental · F1 {best:.2f}", best
 
 
 # ---------------------------------------------------------------------
@@ -522,7 +547,7 @@ def page_home():
               f'<p class="cc-text">Check a whole list at once, then download the results.</p></div></div>')
         with b:
             st.button("Upload CSV", on_click=go_page, args=("Upload CSV",), width="stretch")
-    box("plain", "The score on each card shows how well the models did on patients they had never seen. 1.00 is perfect.")
+    box("plain", "The badge on each card shows MCC, a score of how well the models tell apart patients with and without cancer on patients they did not train on. 0 means guessing and 1.00 is perfect.")
 
 
 def render_input(cancer, f):
@@ -577,7 +602,7 @@ def page_questions(cancer):
       f'<span>Step {ss.step + 1} of {len(groups)}</span></div>')
 
     if cancer == "cervical":
-        box("warn", "These models are weak (score around 0.1 to 0.2), because lifestyle answers alone "
+        box("warn", "These models are weak (no better than guessing in testing), because lifestyle answers alone "
                     "predict cervical cancer poorly. Treat the result as experimental.", "warn")
     if ss.actual.get(cancer) is not None:
         box("info", "A test patient is loaded. Change any answer and the real result will no longer apply.", "info")
